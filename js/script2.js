@@ -1,4 +1,3 @@
-
 window.addEventListener('DOMContentLoaded', () => {
 
     console.log("owefnhowi");
@@ -6,11 +5,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.header');
     const clientsSection = document.querySelector('.clients ');
     const clients = document.querySelector('.clients-wrapper-outer');
-    
-    
+
+
     // header.classList.remove('hide');
 
     let markArr = [];
+    let g = 56;
     const sections = document.querySelectorAll('.toScroll');
 
     sections.forEach(item => {
@@ -28,22 +28,22 @@ window.addEventListener('DOMContentLoaded', () => {
         windowWidth = document.documentElement.clientWidth;
         const clientsWidth = clients.clientWidth;
         const overFlow = 300;
-        const right = (2/3)*windowWidth;
-        const left = windowWidth/3;
+        const right = (2 / 3) * windowWidth;
+        const left = windowWidth / 3;
         const curValue = window.getComputedStyle(clients).transform;
         console.log(curValue);
 
-        if(coordX>left && coordX<right) {
+        if (coordX > left && coordX < right) {
             clients.style.transform = `translateX(0px)`;
         }
 
-        if(coordX>right) {
+        if (coordX > right) {
             clients.style.transform = `translateX(${-overFlow}px)`;
         }
-        if(coordX<left) {
+        if (coordX < left) {
             clients.style.transform = `translateX(${overFlow}px)`;
         }
-        console.log(coordX)       
+        console.log(coordX)
 
     })
 
@@ -78,8 +78,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (curScroll + 30 > needOffset) {
             header.classList.add('invert');
-        }
-        else {
+        } else {
             header.classList.remove('invert')
         }
 
@@ -96,7 +95,7 @@ window.addEventListener('DOMContentLoaded', () => {
             header.style.position = 'fixed';
         }
 
-    
+
 
 
 
