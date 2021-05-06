@@ -1,0 +1,35 @@
+#loading {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000000;
+    z-index: 1001;
+}
+
+.object {
+    animation: scaleIn 3s infinite cubic-bezier(.36, .11, .89, .32);
+    border-radius: 50%;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(.1, .1);
+        opacity: .5;
+    }
+
+    to {
+        transform: scale(4.5, 4.5);
+        opacity: 0;
+    }
+}
