@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
     $('.your-class').slick({
         // arrows: false,
         prevArrow: '',
-        nextArrow: '<div class="slider-footer-next">nennnenext</div>',
+        nextArrow: '<div class="slider-footer-next">Далее</div>',
 
     });
 

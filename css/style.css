@@ -435,6 +435,35 @@ form label {
     margin-bottom: 55px;
 }
 
+.interview-and-pic {
+    display: flex;
+}
+
+.interview-body {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #000;
+}
+
+.interview-pic {
+    overflow: hidden;
+    width: 30%;
+    background: url("../images/pic.jpg") no-repeat center;
+    background-size: cover;
+}
+
 .interview-title {
     margin: 0;
     margin-bottom: 25px;
@@ -443,22 +472,6 @@ form label {
 .interview-subtitle {
     line-height: 38px;
     margin-bottom: 55px;
-}
-
-.interview-body {
-    display: flex;
-    justify-content: space-between;
-}
-
-.slider {
-    width: 65%;
-}
-
-.interview-pic {
-    overflow: hidden;
-    width: 30%;
-    background: url("../images/pic.jpg") no-repeat center;
-    background-size: cover;
 }
 
 .interview-pic img {
@@ -487,13 +500,6 @@ form label {
 
 .slider-answers {
     margin-bottom: 50px;
-}
-
-.slider-footer {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 26px;
-    border-bottom: 1px solid #000;
 }
 
 .slider-footer-counter {
