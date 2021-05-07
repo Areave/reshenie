@@ -7,6 +7,20 @@ window.addEventListener('DOMContentLoaded', () => {
     const clients = document.querySelector('.clients-wrapper-outer');
 
 
+    $('.your-class').slick({
+        // arrows: false,
+        prevArrow: '',
+        nextArrow: '<div class="slider-footer-next">nennnenext</div>',
+
+    });
+
+    const next = document.querySelector('.slider-footer-next');
+    next.remove();
+    document.querySelector('.slider-footer').appendChild(next);
+
+
+
+
     // header.classList.remove('hide');
 
     let markArr = [];
@@ -76,10 +90,17 @@ window.addEventListener('DOMContentLoaded', () => {
         const curScroll = window.pageYOffset;
         const needOffset = document.querySelector('.works').offsetTop;
 
+        const logo = document.querySelector('.logo img');
+        const menu = document.querySelector('.headerRight .menuBtn');
+        const tel = document.querySelector('.headerRight .tel');
+
         if (curScroll + 30 > needOffset) {
-            header.classList.add('invert');
+            logo.classList.add('invert');
+            tel.classList.add('invert');
         } else {
-            header.classList.remove('invert')
+
+            logo.classList.remove('invert');
+            tel.classList.remove('invert');
         }
 
     });
@@ -88,6 +109,9 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         const curScroll = window.pageYOffset;
         console.log(curScroll);
+
+
+
 
         if (curScroll > 10) {
             // header.classList.remove('static');
