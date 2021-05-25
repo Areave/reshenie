@@ -1,653 +1,604 @@
-
-@media screen and (max-width:1300px) {
-
-    .videoBox {
-        left: 10%;
-        top:40px;
-        height: 80%;
+@media screen and (max-width:1370px) {
+    .menu-service {
+        /* padding: 0; */
+    }
+    .menu-links {
+        margin-right: 100px;
     }
 }
-
-@media screen and (max-width:1200px) {
-
-    .wrapper {
-        padding:0 100px;
+@media screen and (max-width:1300px) {
+    .videoBox {
+        left: 10%;
+        top: 40px;
+        height: 80%;
     }
-
+    .menu-service-link {
+        margin-bottom: 40px;
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+    .menu-body {
+        padding-top: 20%;
+    }
+}
+@media screen and (max-width:1200px) {
+    .wrapper {
+        padding: 0 100px;
+    }
     .videoBox {
         left: 25%;
         height: 80%;
     }
-
-    .intro-text a{
+    .intro-text a {
         font-size: 45px;
         line-height: 45px;
     }
-
     .intro-text ul {
         margin-bottom: 80px;
     }
-
     .intro {
         margin-bottom: 100px;
     }
-
     .interview {
         margin-bottom: 150px;
     }
-
-
 }
-
 @media screen and (max-width:1100px) {
     .videoBox {
-        top:40px;
+        top: 40px;
         left: 15%;
         height: 80%;
     }
-
     .screen-wrapper {
         width: 40%;
     }
-
     .work-desc {
         width: 60%;
     }
 }
-
 @media screen and (max-width:1000px) {
     .videoBox {
         left: 7%;
     }
-
     .interview-header {
         width: 100%;
         margin-bottom: 0;
     }
-    .interview-subtitle{
+    .interview-subtitle {
         margin-bottom: 30px;
     }
-
-    .section-title{
+    .section-title {
         font-size: 40px;
     }
-
     .client-logo-wrapper {
         width: 33%;
         height: 100px;
-     
     }
-
-    .clients{
+    .clients {
         margin-bottom: 100px;
     }
-
-
-
+    .slider-body li {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .slider-answers {
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+    .menu-links {
+        font-size: 40px;
+        margin-right: 80px;
+    }
+    .menu-body {
+        padding-top: 22%;
+    }
+    .menu-service-link {
+        padding: 5px 10px;
+        margin-bottom: 30px;
+        margin-right: 15px;
+    }
 }
-
-
-
 @media screen and (max-width:900px) {
     .videoBox {
         left: -10%;
     }
-
     .form-bottom {
         padding-top: 30px;
     }
-
+    .slider-title {
+        margin-bottom: 20px;
+        font-size: 23px;
+    }
+    .menu-body {
+        padding-top: 24%;
+    }
+    .menu-links {
+        font-size: 40px;
+    }
+    .menu-service {
+        padding-top: 20px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .menu-service-link {
+        padding: 5px 20px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
 }
 @media screen and (max-width:800px) {
-
-.videoBox {
-    left: -20%;
+    .videoBox {
+        left: -20%;
+    }
+    .interview-and-pic {
+        flex-direction: column-reverse;
+    }
+    .interview-pic {
+        display: block;
+        height: 214px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .interview-body {
+        width: 100%;
+        padding-right: 0;
+    }
+    .section-title {
+        font-size: 34px;
+    }
+    .clients-title {
+        margin-bottom: 20px;
+    }
+    .work-desc, .screen-wrapper {
+        height: 60%;
+    }
+    .work-title {
+        margin-top: 0;
+    }
+    .work-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .work-text {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .work-title {
+        margin-bottom: 10px;
+    }
+    .footer-contact {
+        font-size: 17px;
+    }
+    .menu-service-link {
+        font-size: 15px;
+        text-align: center;
+    }
 }
-
-.interview-pic{
-display: none; 
-}
-
-.slider{
-    width: 100%;
-}
-
-.section-title {
-    font-size: 34px;
-}
-
-.clients-title {
-    margin-bottom: 20px;
-}
-
-
-.work-desc, .screen-wrapper {
-height: 60%;
-}
-
-.work-title{
-    margin-top: 0;
-}
-
-.work-desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.work-text {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.work-title{
-    margin-bottom: 10px;
-}
-
-.footer-contact {
-    font-size: 17px;
-}
-
-
-
-
-}
-
 @media screen and (max-width:750px) {
     .videoBox {
         top: 120px;
         left: 15%;
         height: 50%;
     }
-
-    .intro-text{
+    .intro-text {
         padding-top: 100px;
     }
-
     .form-bottom {
         flex-direction: column;
         padding-top: 10px;
     }
-
-    .conf{
+    .conf {
         padding-right: 0;
         padding-bottom: 15px;
         text-align: center;
     }
-
     .footer-bottom {
         flex-direction: column;
         text-align: center;
-
     }
-
-    .create{
+    .create {
         padding: 15px 0;
     }
 }
-
-@media screen and (max-width:700px) {
-
+@media (max-width:700px) {
     .wrapper {
-        padding:0 50px;
+        padding: 0 50px;
     }
-
     .header-wrapper {
-        padding:20px 50px;
+        padding: 20px 50px;
     }
-
-    .intro-text a{
+    .intro-text a {
         font-size: 35px;
         line-height: 25px;
     }
-
     .intro-text ul {
         margin-bottom: 40px;
     }
-
     .videoBox {
         top: 59px;
         left: 17%;
         height: 60%;
     }
-
     .tel {
         display: none;
     }
-
     .footer-left {
         width: 45%;
     }
     .footer-right {
         width: 55%;
     }
-
-
+    .menu-body {
+        flex-direction: column;
+        padding-top: 27%;
+    }
+    .menu-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .menu-item-link {
+        width: 50%;
+        border-bottom: none;
+        text-align: center;
+    }
+    .menu-item-link::after {
+        display: none;
+    }
+    .menu-service {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .menu-service-link {
+        margin: 20px;
+    }
 }
-
-@media screen and (max-width:600px) {
-
+@media (max-width:600px) {
     .videoBox {
         top: 100px;
         height: 50%;
     }
-
-
-
-    .clients-wrapper-outer{
+    .clients-wrapper {
         width: 1600px;
-        padding:0;
-        transform: translateX(-25%);
-        transition: 1.9s transform;
+        padding: 0;
+        /* transition: 1.5s transform smooth; */
         margin: 0 auto;
     }
-
-    /* .clients-wrapper{
-        width: 100%;
-    } */
-
-    /* .clients-logos{
-        width: 100%;
-    } */
-
     .client-logo-wrapper {
         width: auto;
         height: 70px;
         padding: 10px;
-     
+        margin: 10px;
     }
-    
-
-
-    .screen-wrapper{
+    .clients-logos {
+        justify-content: space-between;
+    }
+    .screen-wrapper {
         width: 30%;
     }
-
-    .work-desc{
+    .work-desc {
         width: 65%;
     }
-
+    .menu-body {
+        padding-top: 37%;
+    }
+    .menu-links {
+        font-size: 33px;
+    }
+    .menu-item-link {
+        margin-bottom: 30px;
+    }
+    .menu-service-link {
+        margin: 12px;
+    }
+    .footer-contacts {
+        font-size: 18px;
+        padding-bottom: 25px;
+    }
+    .footer-footer {
+        font-size: 12px;
+        padding-bottom: 30px;
+    }
 }
-@media screen and (max-width:550px) {
-
-    .header-wrapper{
+@media (max-width:550px) {
+    .header-wrapper {
         padding: 20px 50px;
     }
-
-    .intro-text a{
+    .intro-text a {
         font-size: 27px;
         line-height: 20px;
-
     }
-
-
-        .videoBox {
-            top: 90px;
-            height: 50%;
-        }
-
-
+    .videoBox {
+        top: 90px;
+        height: 50%;
     }
-
-
-
-
-@media screen and (max-width:500px) {
-
+}
+@media (max-width:500px) {
     .videoBox {
         left: 0;
     }
-
     .section-title {
         font-size: 28px;
     }
-
-    .footer-contact{
+    .footer-contact {
         font-size: 14px;
     }
-
+    .menu-body {
+        padding-top: 30%;
+    }
+    .menu-links {
+        font-size: 28px;
+    }
+    .menu-item-link {
+        margin-bottom: 15px;
+    }
+    .menu-service {
+        padding: 20px 0;
+    }
+    .menu-service-link {
+        margin: 9px;
+    }
 }
-
-@media screen and (max-width:450px) {
-
+@media (max-width:450px) {
     .videoBox {
-        position:relative;
-        left:2%;
+        position: relative;
+        left: 2%;
         height: 70%;
     }
-
     #bgvid {
         position: relative;
-        left:-40%;
+        left: -40%;
     }
-
-    .intro-text_title{
+    .intro-text_title {
         margin-bottom: 30px;
     }
-
-    .intro-text a{
+    .intro-text a {
         font-size: 23px;
         line-height: 20px;
-
     }
-
-    .intro-text li{
+    .intro-text li {
         margin-bottom: 30px;
     }
-
     .main-text {
         font-size: 18px;
         line-height: 28px;
     }
-
-    .client-logo-wrapper {
-        width: 50%;
-     
-    }
-
-    .work-wrapper{
+    /* .client-logo-wrapper {
+width: 50%;
+} */
+    .work-wrapper {
         flex-direction: column-reverse;
     }
-
-    .screen-wrapper{
+    .screen-wrapper {
         width: 70%;
     }
-
-    .work-desc{
+    .work-desc {
         padding: 0;
         margin-top: 50px;
         width: 100%;
-        align-items:center;
+        align-items: center;
     }
-
-    .work-text{
+    .work-text {
         text-align: center;
     }
-
     .footer-body {
         flex-direction: column;
     }
-
     .footer-header {
         padding-top: 50px;
         text-align: center;
     }
-
     .footer-title, .footer-header p {
         margin-top: 0;
         margin-bottom: 20px;
     }
-
-    .footer-left{
+    .footer-left {
         width: 100%;
     }
-
-    .footer-right{
+    .footer-right {
         padding: 0;
         padding-top: 50px;
         width: 100%;
         text-align: center;
     }
-
     .footer-contact {
         font-size: 18px;
-
     }
-
-    .footer-contact-wrapper{
+    .footer-contact-wrapper {
         padding-bottom: 25px;
     }
-
     .conf {
         padding-top: 20px;
         opacity: .3;
     }
-
-    .footer-body{
+    .footer-body {
         margin-bottom: 40px;
     }
-
-    .submit-button{
+    .submit-button {
         margin: 0 auto;
     }
-
+    .menu-body {
+        padding-top: 40%;
+    }
+    .menu-service-link {
+        font-size: 13px;
+        margin: 6px;
+        padding: 3px 10px;
+    }
+    .footer-contacts {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+    .footer-footer {
+        font-size: 10px;
+    }
 }
-
-@media screen and (max-width:420px) {
-
+@media (max-width:420px) {
     .wrapper {
         padding: 0 25px;
     }
-
-    .header-wrapper{
+    .header-wrapper {
         padding: 16px 25px 0;
     }
-
     #bgvid {
-        left:-36%;
+        left: -36%;
     }
-
     .videoBox {
         top: 100px;
     }
-
     .intro-text ul {
         margin-bottom: 35px;
     }
-
 }
-
-@media screen and (max-width:400px) {
-
-
-
+@media (max-width:400px) {
     .videoBox {
         top: 90px;
     }
-
     #bgvid {
-        left:-40%;
+        left: -40%;
     }
-
-
-
-    .intro-text_title{
+    .intro-text_title {
         font-size: 17px;
         margin-bottom: 24px;
     }
-
-    .intro-text li{
+    .intro-text li {
         margin-bottom: 20px;
     }
-
     .footer-header p {
         font-size: 19px;
     }
-
-}
-
-@media screen and (max-width:380px) {
-
-    .header-wrapper{
-padding-bottom: 0;
+    .menu-item-link {
+        font-size: 22px;
     }
-
+}
+@media (max-width:380px) {
+    .header-wrapper {
+        padding-bottom: 0;
+    }
     .logo img {
         height: 20px;
     }
-
-    .menuBtn{
+    .menuBtn {
         height: 42px;
         width: 42px;
-            }
-
-    #bgvid {
-        left:-45%;
     }
-
+    .menuBtn.active span:first-child {
+        top: 9%;
+    }
+    .menuBtn.active span:last-child {
+        top: -10%;
+    }
+    #bgvid {
+        left: -45%;
+    }
     .videoBox {
         top: 80px;
     }
-
     .work-desc {
         justify-content: space-evenly;
     }
 }
-
-@media screen and (max-width:360px) {
-
-
-
+@media (max-width:360px) {
     #bgvid {
-        left:-50%;
+        left: -50%;
     }
-
     .videoBox {
         top: 54px;
     }
-
-    .intro-text_title{
+    .intro-text_title {
         font-size: 14px;
     }
-
-    .intro-text{
+    .intro-text {
         padding-top: 70px;
     }
-
     .section-title {
         font-size: 22px;
     }
-
     .interview-subtitle {
         display: none;
     }
-
-    .interview-pic{
-        display: block;
-        height: 214px;
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .interview-body{
-        flex-direction: column-reverse;
-    }
-
 }
-
-@media screen and (max-width:340px) {
-
-    
+@media (max-width:340px) {
     #bgvid {
-        left:-57%;
+        left: -57%;
     }
-
     .footer-header p {
         font-size: 14px;
     }
-
-
     .footer-form>input {
         padding: 13px 0;
-
         font-size: 14px;
     }
-
     .footer-right {
         padding-top: 70px;
     }
-
-    .footer-contact-title{
+    .footer-contact-title {
         display: none;
     }
-
     .footer-contact {
         font-size: 17px;
         line-height: 17px;
     }
-
     .footer-contact-wrapper:last-child {
-font-size: 15px;
-line-height: 15px;
-opacity: .5;
+        font-size: 15px;
+        line-height: 15px;
+        opacity: .5;
     }
-
-    .footer-body{
+    .footer-body {
         margin-bottom: 70px;
     }
-
     .create {
         padding: 0;
         padding-top: 11px;
     }
-
     .footer-bottom {
         padding-bottom: 34px;
         font-size: 12px;
     }
-
     .submit-button {
         font-size: 18px;
         padding-top: 10px;
     }
-
-
 }
-
-@media screen and (max-width:320px) {
-
+@media (max-width:320px) {
     .wrapper {
         padding: 0 20px;
     }
-
-    .header-wrapper{
+    .header-wrapper {
         padding: 16px 20px;
     }
-
     #bgvid {
-        left:-60%;
+        left: -60%;
     }
-
     .videoBox {
         top: 30px;
     }
-
-    .intro-text{
+    .intro-text {
         padding-top: 30px;
     }
-
-    .intro-text_title{
+    .intro-text_title {
         font-size: 13px;
         margin-bottom: 18px;
     }
-
-    .intro-text li{
+    .intro-text li {
         margin-bottom: 17px;
     }
-
     .main-text {
         font-size: 16px;
-line-height: 24px;
+        line-height: 24px;
     }
-
     .intro-text ul {
         margin-bottom: 28px;
     }
-
-
-
-    .work-text{
+    .work-text {
         font-size: 14px;
-line-height: 20px;
+        line-height: 20px;
     }
-
-
-
-
-
-}
-
-@media screen and (max-width:320px) {
-
 }

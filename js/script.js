@@ -1,10 +1,12 @@
 $(document).ready(function() {
-    $('input[type=radio], select, input[type=checkbox], input.quantity').styler();
-    $("[data-fancybox=images]").fancybox({
-        buttons: [
-            "close"
-        ]
-    });
+
+    // $('input[type=radio], select, input[type=checkbox], input.quantity').styler();
+    // $("[data-fancybox=images]").fancybox({
+    //     buttons: [
+    //         "close"
+    //     ]
+    // });
+
     $("[data-type=inline]").fancybox({
         buttons: [],
         touch: false,
@@ -16,12 +18,6 @@ $(document).ready(function() {
     $("[data-type=ajax]").fancybox({
         buttons: [],
     });
-
-
-
-    // $('.interview2 .slider-item').slick({
-    //     nextArrow: '<div class="slider-footer-next"></div>',
-    // });
 
 
 

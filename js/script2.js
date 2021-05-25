@@ -1,91 +1,77 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    console.log("owefnhowi");
-
     const header = document.querySelector('.header');
     const clientsSection = document.querySelector('.clients ');
-    const clients = document.querySelector('.clients-wrapper-outer');
+    // const clients = document.querySelector('.wrapper.clients-wrapper-outer');
+    const clients = document.querySelector('.clients-wrapper');
+    const intro = document.querySelector('.intro');
+    const menuBtn = document.querySelector('.menuBtn');
+    const menu = document.querySelector('.menu');
+    const body = document.querySelector('body');
 
 
+    // init slider
     $('.your-class').slick({
-        // arrows: false,
         prevArrow: '',
         nextArrow: '<div class="slider-footer-next">Далее</div>',
 
     });
 
-    const next = document.querySelector('.slider-footer-next');
-    next.remove();
-    document.querySelector('.slider-footer').appendChild(next);
+    // scroll clients section
 
 
+    const clientHeight = clients.clientHeight;
+    const clientWidth = clients.offsetWidth;
+
+    const topPosition = clients.offsetTop;
+    const botPosition = clients.offsetTop+clientHeight;
+
+    const windowHeight = document.documentElement.clientHeight;
+    const windowWidth = document.documentElement.clientWidth;
+
+    window.addEventListener('scroll', ()=>{      
 
 
-    // header.classList.remove('hide');
+        const current = window.pageYOffset;
+        const dif = windowHeight - clientHeight;
+        const clientDif = windowWidth - clientWidth;
+        const clientRatio = (clientWidth/windowWidth);
+        // console.log(clientRatio);
 
-    let markArr = [];
-    let g = 56;
-    const sections = document.querySelectorAll('.toScroll');
+        
+        
 
-    sections.forEach(item => {
-        markArr.push(item.offsetTop);
-    })
+        if((windowWidth<600)&&(current + windowHeight> botPosition)&&(current+200<topPosition)) {
 
-    console.log(markArr);
+            const curDif = topPosition-current;
+            const ratio = 100-(100*(curDif/dif));
+            console.log(ratio);
 
-
-
-    // mousemove
-    clientsSection.addEventListener('mousemove', (e) => {
-
-        const coordX = e.pageX;
-        windowWidth = document.documentElement.clientWidth;
-        const clientsWidth = clients.clientWidth;
-        const overFlow = 300;
-        const right = (2 / 3) * windowWidth;
-        const left = windowWidth / 3;
-        const curValue = window.getComputedStyle(clients).transform;
-        console.log(curValue);
-
-        if (coordX > left && coordX < right) {
-            clients.style.transform = `translateX(0px)`;
+            clients.style.transform = `translateX(-${ratio}%)`;  
         }
+    });
 
-        if (coordX > right) {
-            clients.style.transform = `translateX(${-overFlow}px)`;
+
+    // burger menu
+    menuBtn.addEventListener('click', () => {
+        if (menu.classList.contains('active')) {
+
+            menu.classList.remove('active');
+            menuBtn.classList.remove('active');
+            body.style.overflow = '';
+
+
+        } else {
+            menu.classList.add('active');
+            menuBtn.classList.add('active');
+            body.style.overflow = 'hidden';
+
         }
-        if (coordX < left) {
-            clients.style.transform = `translateX(${overFlow}px)`;
-        }
-        console.log(coordX)
-
-    })
-
-    // window.addEventListener('scroll', () => {
-
-    //     const curScroll = window.pageYOffset;
-
-    //     for (let i = 0; i < markArr.length; i++) {
-    //         const mark = markArr[i];
-    //         const dif = curScroll - mark;
-    //         if (Math.abs(dif) < 200) {
-
-    //             window.scrollTo({
-    //                 top: mark - 100,
-    //                 behavior: 'smooth'
-    //             });
-
-    //             return;
-    //         }
-    //     }
-    // })
-
-    // setTimeout(()=>{
-    //     header.style.position = 'fixed';
-    // }, 1600)
+    });
 
 
-    // invert
+
+    // invert header
     window.addEventListener('scroll', () => {
         const curScroll = window.pageYOffset;
         const needOffset = document.querySelector('.works').offsetTop;
@@ -105,32 +91,24 @@ window.addEventListener('DOMContentLoaded', () => {
 
     });
 
-    // fixed header
-    window.addEventListener('scroll', () => {
-        const curScroll = window.pageYOffset;
-        console.log(curScroll);
+    // slider counter init and change
+    const total = document.querySelector('.slider').childElementCount;
+    const counterEl = document.querySelector('.slider-footer-counter');
+    counterEl.textContent = `1/${total} вопрос`;
 
-
-
-
-        if (curScroll > 10) {
-            // header.classList.remove('static');
-            // header.classList.add('fixed');
-            header.style.position = 'fixed';
-        }
-
-
-
-
-
-
-
+    $('.slider').on('afterChange', function(event, slick, currentSlide) {
+        counterEl.textContent = `${currentSlide+1}/${total} вопрос`;
     });
 
 
 
+    // header get fixed
+    window.addEventListener('scroll', () => {
+        const curScroll = window.pageYOffset;
+        const headerHeight = header.clientHeight;
 
-
-
-
+        if (curScroll > 0) {
+            header.style.position = 'fixed';
+        }
+    });
 })
