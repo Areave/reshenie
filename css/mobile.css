@@ -268,7 +268,10 @@
     .clients-wrapper {
         width: 1600px;
         padding: 0;
+
         /* transition: 1.5s transform smooth; */
+
+        /* transform: translateX(-70%); */
         margin: 0 auto;
     }
     .client-logo-wrapper {

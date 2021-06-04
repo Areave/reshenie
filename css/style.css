@@ -180,7 +180,7 @@ main {
 
 .menu.pack.active {
     width: 100%;
-    height: 100hv;
+    height: 100vh;
 }
 
 .menu.pack.active>* {
@@ -581,6 +581,11 @@ display: block;
 
 .clients {
     margin-bottom: 280px;
+
+}
+
+.clients-wrapper-outer{
+
 }
 .clients-title {
     margin-bottom: 50px;
@@ -595,6 +600,7 @@ display: block;
     width: 25%;
     justify-self: center;
     text-align: center;
+
 }
 .client-thumb {
     position: relative;

@@ -1,9 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     const header = document.querySelector('.header');
-    const clientsSection = document.querySelector('.clients ');
+    const clientsSection = document.querySelector('.clients');
     // const clients = document.querySelector('.wrapper.clients-wrapper-outer');
     const clients = document.querySelector('.clients-wrapper');
+    const clientsLogos = document.querySelector('.clients');
     const intro = document.querySelector('.intro');
     const menuBtn = document.querySelector('.menuBtn');
     const menu = document.querySelector('.menu');
@@ -19,35 +20,25 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // scroll clients section
 
-
     const clientHeight = clients.clientHeight;
     const clientWidth = clients.offsetWidth;
-
     const topPosition = clients.offsetTop;
     const botPosition = clients.offsetTop+clientHeight;
-
     const windowHeight = document.documentElement.clientHeight;
     const windowWidth = document.documentElement.clientWidth;
 
-    window.addEventListener('scroll', ()=>{      
-
-
+    window.addEventListener('scroll', ()=>{    
         const current = window.pageYOffset;
-        const dif = windowHeight - clientHeight;
-        const clientDif = windowWidth - clientWidth;
-        const clientRatio = (clientWidth/windowWidth);
-        // console.log(clientRatio);
+        const clientDif = clientWidth - windowWidth;   
 
-        
-        
+        if((windowWidth<600)&&(current + windowHeight +120> botPosition)&&(current+clientHeight<topPosition)) {            
+            const curDif = topPosition-current-clientHeight;
+            const difConst = windowHeight - clientHeight -100;
+            coefVert = 100- (curDif*100/difConst);
+            const clientOffset = (clientWidth - windowWidth)/100;
+            console.log(-1*coefVert*clientOffset);
 
-        if((windowWidth<600)&&(current + windowHeight> botPosition)&&(current+200<topPosition)) {
-
-            const curDif = topPosition-current;
-            const ratio = 100-(100*(curDif/dif));
-            console.log(ratio);
-
-            clients.style.transform = `translateX(-${ratio}%)`;  
+            clients.style.transform = `translateX(-${(coefVert*clientOffset)}px)`;  
         }
     });
 
